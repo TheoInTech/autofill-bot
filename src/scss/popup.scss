@@ -1,0 +1,98 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  padding: 15px;
+}
+
+label {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+input {
+  margin-bottom: 10px;
+}
+
+input[type="submit"],
+button {
+  width: 100%;
+}
+
+.status-header {
+  height: 150px;
+  width: 265px;
+  display: flex;
+  align-items: center;
+
+  &.safe {
+    background: linear-gradient(180deg, #36be00 0%, #278900 100%);
+  }
+
+  &.unsafe {
+    background: linear-gradient(180deg, #e10000 0%, #c00000 100%);
+  }
+
+  &.insecure {
+    background: linear-gradient(180deg, #ffc853 0%, #f9941b 100%);
+  }
+}
+
+.status-header-icon {
+  display: block;
+  margin: 0 auto;
+  width: 90px;
+}
+
+.status-body {
+  width: 265px;
+
+  .logo {
+    display: block;
+    margin: 0 auto 16px;
+  }
+}
+
+.status-text {
+  font-family: Cabin;
+  font-size: 30px;
+  font-weight: bold;
+  margin: 16px 0;
+  text-align: center;
+
+  .safe {
+    color: #299000;
+  }
+
+  .unsafe {
+    color: #c10000;
+  }
+
+  .insecure {
+    color: #e28413;
+  }
+}
+
+button,
+input[type="submit"] {
+  cursor: pointer;
+  margin: 5px auto;
+}
+
+#btnAuto {
+  background: rgb(47, 58, 216);
+  color: #fff;
+}
+
+#btnStop {
+  background: #c10000;
+  color: #fff;
+}
+
+#btnReset {
+  background: #ff8f06;
+  color: #fff;
+}

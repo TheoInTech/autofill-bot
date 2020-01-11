@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Jamaica",
+            "postal_codes": [
+            11412, 11423, 11432, 11433, 11434, 11435, 11436
+        ]
+    },
+    {
+        "name": "Northwest Queens",
+        "postal_codes": [
+            11101, 11102, 11103, 11104, 11105, 11106
+        ]
+    },
+    {
+        "name": "West Central Queens",
+        "postal_codes": [
+            11374, 11375, 11379, 11385
+        ]
+    },
+    {
+        "name": "Rockaways",
+        "postal_codes": [
+            11691, 11692, 11693, 11694, 11695, 11697
+        ]
+    },
+    {
+        "name": "Central Queens",
+        "postal_codes": [
+            11374, 11375, 11379, 11385
+        ]
+    }
+]

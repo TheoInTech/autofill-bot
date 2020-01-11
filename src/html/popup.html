@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Vault Safe Search</title>
+    <link rel="stylesheet" href="/fonts/fonts.css" />
+    <link rel="stylesheet" href="/css/popup.css" />
+  </head>
+  <body>
+    <div id="app">
+      <div class="container">
+        <img class="status-header-icon" src="/img/logo.png" />
+
+        <p>Date: <span id="datenow"></span></p>
+        <p>Sent votes today: <span id="sentvote"></span></p>
+
+        <form id="countform">
+          <label for="noofvotes">Number of votes</label>
+          <input type="text" id="noofvotes" name="noofvotes" value="400" />
+          <br />
+          <input type="submit" value="Update" id="submitcount" />
+        </form>
+
+        <hr />
+
+        <button type="button" id="btnAuto">Auto</button>
+        <br />
+        <button type="button" id="btnStop">Stop</button>
+        <br />
+        <button type="button" id="btnReset">Reset</button>
+        <br />
+        <hr />
+
+        <form id="fillform">
+          <input type="submit" value="Submit" id="submitfill" />
+          <br />
+          <button type="button" id="btnReload">Reload Page</button>
+          <hr />
+
+          <label for="category">Category</label>
+          <input
+            type="text"
+            id="category"
+            name="category"
+            value="Pediatrician"
+          />
+          <br />
+
+          <label for="nominee">Nominee</label>
+          <input
+            type="text"
+            id="nominee"
+            name="nominee"
+            value="Marigold Castillo"
+          />
+          <br />
+
+          <label for="address">Nominee Address</label>
+          <input
+            type="text"
+            id="address"
+            name="address"
+            value="42-05 Francis Lewis Blvd"
+          />
+          <br />
+
+          <label for="city">Nominee City</label>
+          <input type="text" id="city" name="city" value="Bayside, NY 11361" />
+          <br />
+
+          <label for="phone">Nominee Phone Number</label>
+          <input type="text" id="phone" name="phone" value="718-631-2273" />
+          <br />
+
+          <label for="website">Nominee Website</label>
+          <input type="text" id="website" name="website" value="md1care.nyc" />
+          <br />
+
+          <label for="cname">Nominee Contact Name</label>
+          <input
+            type="text"
+            id="cname"
+            name="cname"
+            value="Marigold Castillo"
+          />
+          <br />
+
+          <label for="cemail">Nominee Contact Email</label>
+          <input
+            type="text"
+            id="cemail"
+            name="cemail"
+            value="drgold@md1care.nyc"
+          />
+          <br />
+          <br />
+        </form>
+
+        <hr />
+      </div>
+    </div>
+    <script src="/js/jquery.js"></script>
+    <script src="/js/popup.js"></script>
+    <script src="/js/fill.js"></script>
+  </body>
+</html>

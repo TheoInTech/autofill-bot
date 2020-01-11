@@ -1,0 +1,42 @@
+{
+  "name": "autofill-bot",
+  "version": "1.0.0",
+  "description": "Bot for autofilling forms and refreshing a page",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "echo 'Try npm run prod-chrome instead.' && exit 0",
+    "local-chrome": "cross-env NODE_ENV=local BROWSER=chrome node_modules/webpack/bin/webpack.js --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "local-firefox": "cross-env NODE_ENV=local BROWSER=firefox node_modules/webpack/bin/webpack.js --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "dev-chrome": "cross-env NODE_ENV=development BROWSER=chrome node_modules/webpack/bin/webpack.js --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "dev-firefox": "cross-env NODE_ENV=development BROWSER=firefox node_modules/webpack/bin/webpack.js --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch-chrome": "cross-env NODE_ENV=development BROWSER=chrome node_modules/webpack/bin/webpack.js --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch-firefox": "cross-env NODE_ENV=development BROWSER=firefox node_modules/webpack/bin/webpack.js --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "staging-chrome": "cross-env NODE_ENV=staging BROWSER=chrome node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "staging-firefox": "cross-env NODE_ENV=staging BROWSER=firefox node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "prod-chrome": "cross-env NODE_ENV=release BROWSER=chrome node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "prod-firefox": "cross-env NODE_ENV=release BROWSER=firefox node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com:RoqueVTR/autofill-bot.git"
+  },
+  "author": "Theo Roque",
+  "homepage": "http://www.theoroque.com",
+  "devDependencies": {
+    "clean-webpack-plugin": "^0.1.19",
+    "cross-env": "^5.1.4",
+    "laravel-mix": "^2.1.9",
+    "babel": "^6.23.0",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "css-loader": "^0.28.9",
+    "webpack": "^3.10.0"
+  },
+  "dependencies": {
+    "bootstrap": "^4.0.0",
+    "jquery": "^3.3.1",
+    "moment": "^2.21.0",
+    "popper.js": "^1.14.1",
+    "tldjs": "^2.3.1"
+  }
+}

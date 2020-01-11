@@ -1,0 +1,10 @@
+{
+  "appName": {
+    "message": "Autovote",
+    "description": "Autofill forms and refresh the page automatically"
+  },
+  "appDesc": {
+    "message": "Autovote lets you autofill forms and refresh a page automatically",
+    "description": "Autofill forms and refresh the page automatically"
+  }
+}
